@@ -1,0 +1,44 @@
+a {
+    text-decoration: none;
+    color: rgb(216, 76, 76);
+    display: inline-block;
+
+  }
+  
+  a:hover,
+  a:active {
+    color: lightgray;
+  }
+  
+  .navigation-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    
+    font-size: 14px;
+    
+    
+  }
+  
+  .nav-caption {
+    display: inline-block;
+    padding-left: 6px;
+   
+    font-size: 14px;
+
+  }
+  .navigation-items a {
+    display: flex;
+    align-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    
+    font-size: 14px;
+    }
+    mat-toolbar{
+
+      margin-bottom: 30px;
+    }

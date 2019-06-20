@@ -1,0 +1,38 @@
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  color: #4a4a4d;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+ .container {
+  justify-content:  center ;
+  
+    margin:0 80px
+    
+} 
+
+
+
+table {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    min-width: 500px;
+}
+ 
+th.mat-header-cell {
+    text-align: left;
+    max-width: 300px;
+}
+
+

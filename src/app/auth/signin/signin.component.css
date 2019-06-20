@@ -1,0 +1,61 @@
+mat-form-field {
+    width: 300px;
+  }
+ 
+  .signup-form{
+    justify-content:  center ;
+    
+    margin:0 80px
+  }
+
+  mat-form-field{
+    width: 400px;
+}
+mat-card-title{
+    text-align: center;
+}
+
+/* You can add global styles to this file, and also import other style files */
+
+
+div.container{
+    margin: 0px 40px;
+    width: 100%;
+    padding: 5%;
+}
+
+.fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
+
+  form.normal-form{
+    margin: 10px;
+}
+
+.controles-container{
+    width: 100%;
+    padding: 5%;
+    margin: 0px 40px;
+    
+}
+
+.controles-container > * {
+    width: 100%;
+    margin: 0px 40px;
+
+    }
+
+    .add-bottom-padding{
+        padding-bottom: 10px;
+        width: 100%;
+    }
+
+
+.button-row button{
+    margin: 5px;
+}
+mat-form-field {
+    width: 300px;
+  }

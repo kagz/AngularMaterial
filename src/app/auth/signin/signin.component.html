@@ -1,0 +1,44 @@
+<section class="signin-form">
+     
+   
+    <form  fxLayout="column" fxLayoutAlign="center center" (ngSubmit)="onLogin()">
+         <div *ngIf="loginError" style="color:red;">
+               Incorrect username or password.
+            </div>
+ <mat-form-field>
+    <input 
+    type="username" 
+    matInput
+     placeholder=" User Name"
+   
+     required 
+     name="username"
+     [(ngModel)]="username"
+     >
+     
+ </mat-form-field>
+ <mat-form-field>
+    <input
+     type="password"
+      matInput 
+      placeholder="Your Password"
+     
+        name="password"
+      
+       required
+       [(ngModel)]="password"
+ 
+       >
+     
+       
+ </mat-form-field>
+   
+   <div>
+      <p><a routerLink="/forgetpassword">Recover Password</a></p>
+
+    </div> 
+    
+    <button type="submit" mat-raised-button color="primary" >Login</button>
+</form>
+    
+  </section>

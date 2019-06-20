@@ -1,0 +1,47 @@
+<section class="signup-form">
+      <div class="alert alert-info"
+      *ngIf="emailSent">An email has been sent to the email address you just registered. 
+      Please validate your email adderss and update your password info.</div>
+      <div>
+         
+      </div>
+
+   <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" fxLayout="column" fxLayoutAlign="center center" >
+<mat-form-field>
+
+   
+   <input 
+   type="username" 
+   matInput
+    placeholder=" User Name"
+    formControlName="username" 
+    required 
+    name="username"
+    >
+    <mat-error  *ngIf="usernameExists">The User Name is Not Unique</mat-error>
+    
+
+</mat-form-field>
+
+
+<mat-form-field>
+   <input
+    type="email"
+     matInput 
+     placeholder="Your Email"
+      ngModel
+       name="email"
+       formControlName="email"      
+      required
+
+      >
+      <mat-error  *ngIf="emailExists">The Email Address is Not Unique</mat-error>
+      
+</mat-form-field>
+<div>
+   <p><a routerLink="/login">Back to Login</a></p>
+
+ </div> 
+  <button type="submit" mat-raised-button color="primary" >Sign Up</button>
+   </form>
+ </section>
